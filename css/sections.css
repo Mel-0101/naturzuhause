@@ -1,0 +1,369 @@
+@import url("/css/variablen.css");
+
+/* Header */
+nav {
+    height: 15vh;
+    background-color: var(--base-dark);
+    justify-content: space-between;
+    font-family: var(--display-text);
+    font-weight: bold;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    gap: 2.5rem;
+}
+
+nav a {
+    color: var(--light);
+}
+
+.icons {
+    gap: 1rem;
+}
+
+/* Hero-Sektion */
+.hero {
+    height: 85vh;
+    background-color: var(--base-dark);
+    gap: 10vw;
+}
+
+.hero>div {
+    flex: 0 1 400px;
+}
+
+.intro {
+    color: white;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+}
+
+.hero a {
+    /* Damit margin-bottom von text-box wirkt */
+    display: inline-block;
+}
+
+/* Produkte-Sektion */
+.products h2 {
+    margin-bottom: 2rem;
+}
+
+.products-container {
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.products-container>div {
+    flex: 0 1 327px;
+    border: 1px solid #EFEBE5;
+}
+
+.products a {
+    display: inline-block;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Über Uns-Sektion */
+.about {
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.about>div {
+    flex: 0 1 450px;
+}
+
+
+
+/* ------------ Grid-Sektion mit Grid-Area ------------ */
+
+.grid-child-1 {
+    grid-area: box1;
+}
+
+.grid-child-2 {
+    grid-area: box2;
+}
+
+.grid-child-3 {
+    grid-area: box3;
+}
+
+.grid-child-4 {
+    grid-area: box4;
+}
+
+.grid-child-5 {
+    grid-area: box5;
+}
+
+.grid-child-6 {
+    grid-area: box6;
+}
+
+.grid img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid {
+    margin: 0 auto;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0.625rem;
+    grid-template-areas:
+        'box1 box2 box3 box3'
+        'box1 box2 box3 box3'
+        'box4 box4 box5 box6'
+        'box4 box4 box5 box7'
+}
+
+/* Kontakt-Sektion */
+.contact {
+    gap: 6.5rem;
+    flex-wrap: wrap;
+}
+
+.contact h2 {
+    margin-bottom: 0.5rem;
+}
+
+.heading {
+    margin-bottom: 1.5rem;
+}
+
+.contact>div {
+    flex-direction: column;
+    width: 25rem;
+    flex: 0 1 400px;
+}
+
+.contact form {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input[type=text],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    font-family: inherit;
+    border: 1px solid #424242;
+    background-color: #FCFBF8;
+}
+
+/* Footer-Sektion */
+footer {
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+footer p,
+footer h6 {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #E0E0E0;
+    font-family: var(--body-text);
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.social-icons {
+    gap: 2.5rem;
+}
+
+.social-icons i {
+    font-size: 2rem;
+}
+
+/* Overlay */
+.overlay {
+    height: 100vh;
+    width: 50%;
+    background-color: var(--base-dark);
+    box-shadow: 15px 15px 15px 12px #423d34cc;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.overlay-content ul {
+    flex-direction: column;
+    list-style-type: none;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+.overlay-content a,
+.close-btn {
+    color: var(--light);
+}
+
+.close-btn {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+}
+
+/* Overlay Navigation */
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+/* Media Queries */
+/* 992px Tablets und kleine Laptops */
+@media screen and (width<=992px) {
+
+    /* Grid */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas:
+            'box1 box2'
+            'box1 box2'
+            'box3 box3'
+            'box3 box3'
+            'box4 box4'
+            'box4 box4'
+            'box5 box6'
+            'box5 box7';
+    }
+}
+
+/* @media screen and (width<=576px) { */
+@media screen and (width<=768px) {
+
+    /* Hero */
+    .hero {
+        background: url("../img/hero.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero::before {
+        background-color: #423d34cc;
+        content: "";
+        position: absolute;
+        height: 85vh;
+        width: 100%;
+    }
+
+    .intro {
+        z-index: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    /* Nav */
+    nav .icons,
+    nav a {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        color: var(--light);
+        font-size: 3rem;
+    }
+}
+
+/* 576px Smartphone klein */
+@media screen and (width<=576px) {
+
+
+    /* Produkte */
+    .products {
+        padding: 3rem 2rem;
+    }
+
+    .products-container {
+        gap: 2rem;
+    }
+
+    .products h5 {
+        font-size: 1.2rem;
+    }
+
+    /* About */
+    .about {
+        padding: 3rem 2rem;
+        gap: 2rem;
+    }
+
+    /* Grid */
+    .grid {
+        margin: 0 auto;
+        padding: 3rem 2rem;
+        width: 100%;
+        gap: 1.5rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            'box1'
+            'box1'
+            'box3'
+            'box3'
+            'box6';
+    }
+
+    .grid-child-2,
+    .grid-child-4,
+    .grid-child-5,
+    .grid-child-7 {
+        display: none;
+        position: absolute;
+
+    }
+
+    /* Kontakt */
+    .contact {
+        padding: 3rem 2rem;
+        gap: 2rem;
+    }
+
+    .contact button {
+        margin-top: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 3rem 2rem;
+        gap: 2rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer>div {
+        flex: 0 0 50%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,30 @@
+:root {
+    --primary: #602783;
+    --secondary: #D0BA86;
+    --base-light: #D2EAE5;
+    --base-dark: #3B7E71;
+    --light: #FCFBF8;
+    --dark: #1D180B;
+
+    --functional-text: 'Poppins', Arial, Helvetica, sans-serif;
+    --body-text: 'Lora', 'Times New Roman', serif;
+    --display-text: 'Poppins', Arial, Helvetica, sans-serif;
+    /* --subheadings: 'Poppins', Arial, Helvetica, sans-serif; */
+
+    /* 16px */
+    --p-1: 1rem;
+    /* 32px */
+    --p-2: 2rem;
+    /* 48px */
+    --p-3: 3rem;
+    /* 64px */
+    --p-4: 4rem;
+    /* 80px */
+    --p-5: 5rem;
+    /* 96px */
+    --p-6: 6rem;
+    /* 104px */
+    --p-6-5: 6.5rem;
+    /* 240px */
+    --p-15: 15rem;
+}

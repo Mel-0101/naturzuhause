@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturzuhause</title>
+    <meta name="keywords"
+        content="Natur, Pflanzen, Zuhause, Wohnen, Hauspflanzen, Atmosphäre, Pflanzenliebhaber, Pflegehinweise">
+    <meta name="description"
+        content="Willkommen bei Naturzuhause - Ihrem Experten für stilvolle und pflegeleichte Hauspflanzen. Entdecken Sie unsere vielfältige Auswahl und bringen Sie die Schönheit der Natur in Ihr Zuhause!">
+    <meta name="author" content="Christine Hogg">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sections.css">
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Navigation -->
+        <nav class="flex px-2 align-items-center">
+            <div>
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <ul class="flex">
+                <li><a href="">Über Uns</a></li>
+                <li><a href="">Kontakt</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+            <div class="icons flex">
+                <a href=""><i class="bi bi-search"></i></a>
+                <a href=""><i class="bi bi-cart-fill"></i></a>
+                <a href=""><i class="bi bi-heart-fill"></i></a>
+            </div>
+            <a class="hamburger" href="javascript:void(0)" onclick="openNav()"><i class="bi bi-list"></i></a>
+        </nav>
+    </header>
+
+    <!-- Overlay -->
+    <div id="myNav" class="overlay display-none py-2 px-2">
+        <a class="close-btn" href="javascript:void(0)" onclick="closeNav()"><i class="bi bi-x"></i></a>
+
+        <div class="overlay-content  mt-1">
+            <ul class="flex">
+                <li><a href="">Über Uns</a></li>
+                <li><a href="">Kontakt</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Sektion -->
+        <section class="hero px-2 flex justify-content-center align-items-center">
+            <div class="intro flex">
+                <h1>Naturzuhause</h1>
+                <h5 class="byline">Natürlich schön wohnen</h5>
+                <p>Willkommen bei Naturzuhause – Ihrem Experten für stilvolle und pflegeleichte Hauspflanzen.
+                    Entdecken Sie unsere vielfältige Auswahl und bringen Sie die Schönheit der Natur in Ihr Zuhause!
+                </p>
+                <a href="" class="buttons btn-secondary mt-2">Mehr Erfahren <i class="bi bi-arrow-down"></i></a>
+            </div>
+            <div class="image-container">
+                <img src="img/hero.jpg" alt="Foto einer Monstera Pflanze">
+            </div>
+        </section>
+
+        <!-- Produkte -->
+        <section class="products px-5 py-6-5">
+            <h2>Featured Products</h2>
+            <div class="products-container flex justify-content-center">
+                <div>
+                    <img src="img/smaragdschatz.jpg" alt="Foto Smaragdschatz">
+                    <div class="px-1 py-1">
+                        <div class="flex justify-content-space-between">
+                            <h5>Smaragdschatz</h5>
+                            <h5>€25</h5>
+                        </div>
+                        <a href="" class="buttons btn-primary">Kaufen</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/dschungeltraum.jpg" alt="Foto Dschungeltraum">
+                    <div class="px-1 py-1">
+                        <div class="flex justify-content-space-between">
+                            <h5>Dschungeltraum</h5>
+                            <h5>€30</h5>
+                        </div>
+                        <a href="" class="buttons btn-primary">Kaufen</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/sonnengruss.jpg" alt="Foto Sonnengruß">
+                    <div class="px-1 py-1">
+                        <div class="flex justify-content-space-between">
+                            <h5>Sonnengruß</h5>
+                            <h5>€50</h5>
+                        </div>
+                        <a href="" class="buttons btn-primary">Kaufen</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/zen-garten.jpg" alt="Foto Zen-Garten">
+                    <div class="px-1 py-1">
+                        <div class="flex justify-content-space-between">
+                            <h5>Zen-Garten</h5>
+                            <h5>€35</h5>
+                        </div>
+                        <a href="" class="buttons btn-primary">Kaufen</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/blaetterpoesie.jpg" alt="Foto Blätterpoesie">
+                    <div class="px-1 py-1">
+                        <div class="flex justify-content-space-between">
+                            <h5>Blätterpoesie</h5>
+                            <h5>€65</h5>
+                        </div>
+                        <a href="" class="buttons btn-primary">Kaufen</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/gruenes-wunder.jpg" alt="Foto Grünes Wunder">
+                    <div class="px-1 py-1">
+                        <div class="flex justify-content-space-between">
+                            <h5>Grünes Wunder</h5>
+                            <h5>€60</h5>
+                        </div>
+                        <a href="" class="buttons btn-primary">Kaufen</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Über Uns Sektion -->
+        <section class="about py-6-5 flex justify-content-center align-items-center bg-light">
+            <div>
+                <img src="img/profile-pic.png" alt="Foto Über Uns">
+            </div>
+            <div class="about-text">
+                <h2 class="mb-1">Über Uns</h2>
+                <p>Bei Naturzuhause sind wir davon überzeugt, dass Pflanzen das Wohlbefinden steigern und jedem Raum
+                    eine besondere Atmosphäre verleihen. Unser Ziel ist es, Ihnen hochwertige und pflegeleichte Pflanzen
+                    anzubieten, die Ihrem Zuhause nicht nur eine grüne Note verleihen, sondern auch Ihre Lebensqualität
+                    verbessern.</p><br>
+                <p>Unser Team besteht aus leidenschaftlichen Pflanzenliebhabern, die über umfangreiches Wissen und
+                    Erfahrung in der Pflege und Auswahl der besten Pflanzen verfügen. Wir wählen unsere Pflanzen
+                    sorgfältig aus und achten darauf, dass sie unter optimalen Bedingungen gedeihen, bevor sie den Weg
+                    zu Ihnen nach Hause finden.
+                    Egal, ob Sie ein erfahrener Pflanzenprofi oder ein Anfänger sind, wir stehen Ihnen mit Rat und Tat
+                    zur Seite. Auf unserer Website finden Sie hilfreiche Pflegehinweise und Tipps, damit Ihre Pflanzen
+                    lange gesund und schön bleiben.</p><br>
+                <p>Mit Naturzuhause möchten wir Ihnen nicht nur Pflanzen, sondern auch ein Stück Natur und Freude in Ihr
+                    Zuhause bringen. Lassen Sie sich von unserer Leidenschaft anstecken und entdecken Sie die Welt der
+                    Hauspflanzen auf eine neue Art und Weise.</p>
+            </div>
+        </section>
+
+        <!-- Bilder-Grid -->
+        <section class="grid py-6-5">
+            <div class="grid-child-1"><img src="img/schweizer-kaserei-auf-braunem-klavier.jpg" alt=""></div>
+            <div class="grid-child-2"><img src="img/grunblattrige-pflanze-im-topf.jpg" alt=""></div>
+            <div class="grid-child-3 bg-dark flex justify-content-center align-items-center">
+                <h4>Grüner leben,<br>schönerwohnen.</h4>
+            </div>
+            <div class="grid-child-4"><img src="img/grunblattrige-pflanze.jpg" alt=""></div>
+            <div class="grid-child-5"><img src="img/ubersichtliche-duschkabine.jpg" alt=""></div>
+            <div class="grid-child-6"><img src="img/silberner-imac-auf-holzschreibtisch.jpg" alt=""></div>
+            <div class="grid-child-7"><img src="img/fruchte-in-schalen-auf-dem-tisch.jpg" alt=""></div>
+
+        </section>
+
+        <!-- Kontakt Sektion -->
+        <section class="contact py-6-5 px-6-5 flex justify-content-center bg-light">
+            <div class="flex">
+                <div class="heading">
+                    <h2>Fragen?</h2>
+                    <h5 class="byline">Nimm Kontakt zu uns auf.</h5>
+                </div>
+                <form action="" method="get" id="contact-form" class="flex">
+                    <div>
+                        <label for="name">Vorname & Nachname</label><br>
+                        <input type="text" name="name" id="name" placeholder="Vorname & Nachname">
+                    </div>
+                    <div>
+                        <label for="email">E-Mail Adresse</label><br>
+                        <input type="text" name="email" id="email" placeholder="E-Mail Adresse">
+                    </div>
+                    <div>
+                        <label for="message">Nachricht</label><br>
+                        <textarea name="message" id="message" placeholder="Ihre Nachricht" rows="5"></textarea>
+                    </div>
+                    <button class="buttons btn-primary" type="submit" form="contact-form" value="Abschicken">Abschicken
+                        <i class="bi bi-send-fill"></i></button>
+
+                </form>
+            </div>
+            <div>
+                <img src="img/contact.jpg" alt="">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark flex py-5">
+        <div>
+            <h6>Kontakt</h6>
+            <p>Frankfurter Tor 93 <br>
+                10243 Berlin</p>
+            <p>
+                <a href="tel:+191234567">0191 23 45 67</a> <br>
+                <a href="mailto:info@natur.com">info@natur.com</a>
+            </p>
+        </div>
+        <div>
+            <h6>Rechtliches</h6>
+            <p>Datenschutz</p>
+            <p>Impressum</p>
+        </div>
+        <div class="social-icons flex">
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-pinterest"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").classList.add("display-block");
+            document.querySelector("body").style.overflow = "hidden";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").classList.remove("display-block");
+            document.querySelector("body").style.overflow = "visible";
+        }
+    </script>
+
+</body>
+
+</html>
